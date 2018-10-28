@@ -14,23 +14,66 @@ and open the template in the editor.
         <div>TODO write content</div><div>nowy div</div>
         <span>testowy span</span> <span>drugi testowy span</span>
         <p>paragrafik pierwszy
-            <img src="img/obraz.jpg" alt="obraz, wymiar, 300pikseli" width="200" height="400" hspace="5" vspace="10" align="left"/>
+            <img src="img/obraz.jpg" alt="obraz, wymiar, 300pikseli" width="300" height="300" hspace="5" vspace="10" align="left" usemap="#mapa_obrazka"/>
+            <map name="mapa_obrazka">
+                <area shape="rect" coords="0,0,150,300" href="http://www.wp.pl" alt="wirtualna polska"/>
+                <area shape="rect" coords="150,0,300,300" href="http://www.onet.pl" alt="onet"/>
+            </map>
         paragrafik drugi</p>
+        <br>
+        
         <br>
         <table border="1"  cellpadding="2" cellspacing="5">
             <thead>
                 <tr>
-                    <th>jeden</th><th>dwa</th>
+                    <th colspan="2">jeden i dwa</th><th>osiem</th>
                 </tr>  
             </thead>
             <tbody>
                 <tr>
+                    <td rowspan="2">siedem</td>
                     <td>trzy</td><td>sześć</td>
                 </tr>
                 <tr>
-                    <td>cztery</td><td>pięć</td>
+                    <td colspan="2">cztery i pięć</td>
                 </tr>
             </tbody>
         </table>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <form action="" id="form1" method="get">
+            <label for="Imie">Imię</label>
+                <input type="text" name="Imie" id="Imie" value="Lukasz" maxlength="4"/>
+            <br/>
+            <label for="Haslo">Hasło</label>
+                <input type="password" name="haselko" value="lukaszek" id="Haslo"/>
+            <br/>
+            <label for="Ptaszek">Zaznacz</label>
+            <br/>
+                <input type="checkbox" name="zaznacz" id="Ptaszek"/>
+            <label for="muzyka">Mężczyzna</label>
+            <br/>
+                <input type="radio" name="muzyczka" id="muzyka"/>
+            <label for="muzyka">Kobieta</label>
+            <br/>
+                <input type="radio" name="muzyczka" id="muzyka2"/>
+            <label for="Zeruj">Mężczyzna</label>
+            <br/>
+                <input type="reset" name="zeruj" value="Reset" id="Zeruj"/>
+            <label for="plik">Wyślij</label>
+            <br/>
+                <input type="file" name="pliczek" id="plik"/>
+            <label for="ukryte">Ukryte</label>
+            <br/>
+                <input type="hidden" name="schowane" id="ukryte"/>
+            <label for="obraz">Obrazki</label>
+            <br/>
+                <input type="image" name="obrazek" id="obraz"/>
+             <label for="guzik">Zaznaczenie</label>
+            <br/>
+                <input type="button" name="przycisk" id="guzik"/>
+             <label for="klik">Przyciski</label>
+            <br/>
+                <input type="submit" value="Kliknij" id="klik"/>
+        </form>
     </body>
 </html>
