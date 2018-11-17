@@ -41,6 +41,13 @@ and open the template in the editor.
         </table>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <form action="" id="form1" method="get">
+            <select>
+                <optgroup label="Kraje">
+                <option value ="PL">Polska</option>
+                <option value="EN">GB</option>
+                </optgroup>
+            </select>
+            <textarea rows="10" cols="10">dowolny tekst</textarea>
             <label for="Imie">Imię</label>
                 <input type="text" name="Imie" id="Imie" value="Lukasz" maxlength="4"/>
             <br/>
@@ -48,13 +55,11 @@ and open the template in the editor.
                 <input type="password" name="haselko" value="lukaszek" id="Haslo"/>
             <br/>
             <label for="Ptaszek">Zaznacz</label>
-            <br/>
                 <input type="checkbox" name="zaznacz" id="Ptaszek"/>
-            <label for="muzyka">Mężczyzna</label>
-            <br/>
-                <input type="radio" name="muzyczka" id="muzyka"/>
+                <br/>
+
+                <br/>
             <label for="muzyka">Kobieta</label>
-            <br/>
                 <input type="radio" name="muzyczka" id="muzyka2"/>
             <label for="Zeruj">Mężczyzna</label>
             <br/>
@@ -63,7 +68,6 @@ and open the template in the editor.
             <br/>
                 <input type="file" name="pliczek" id="plik"/>
             <label for="ukryte">Ukryte</label>
-            <br/>
                 <input type="hidden" name="schowane" id="ukryte"/>
             <label for="obraz">Obrazki</label>
             <br/>
@@ -71,9 +75,9 @@ and open the template in the editor.
              <label for="guzik">Zaznaczenie</label>
             <br/>
                 <input type="button" name="przycisk" id="guzik"/>
-             <label for="klik">Przyciski</label>
-            <br/>
+            <label for="klik">Przyciski</label>
                 <input type="submit" value="Kliknij" id="klik"/>
+            
         </form>
     </body>
 </html>
